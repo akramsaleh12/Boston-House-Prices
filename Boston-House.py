@@ -44,7 +44,7 @@ data_dict = pd.read_csv(data_dict_file)
 data = pd.read_csv(data_file)
 
 # Streamlit App Title
-st.image("image1.jpg")
+st.image("Image1.jpg")
 # st.title("Diabetes Dataset Descriptive Analytics")
 
 # Sidebar for navigation
