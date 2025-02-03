@@ -6,3 +6,4 @@ seaborn==0.13.2
 streamlit==1.37.1
 scikit-learn==1.6.1
 xgboost==1.6.2
+pkg_resources
