@@ -1,0 +1,15 @@
+Feature,Description
+Crime Rate,crim: Per capita crime rate by town.
+Residential Land Proportion,"zn: Proportion of residential land zoned for lots over 25,000 sq. ft."
+Non Retail Land Proportion,indus: Proportion of non-retail business acres per town.
+Bounds Charles River,chas: Charles River dummy variable (1 if tract bounds river; 0 otherwise).
+Nitric Oxide Concentration,nox: Nitric oxide concentration (parts per 10 million).
+Avg Rooms Per Dwelling,rm: Average number of rooms per dwelling.
+Old Units Proportion,age: Proportion of owner-occupied units built before 1940.
+Weighted Distance To Centers,dis: Weighted distances to five Boston employment centers.
+Highway Accessibility Index,rad: Index of accessibility to radial highways.
+Property Tax Rate,"tax: Full-value property tax rate per $10,000."
+Pupil Teacher Ratio,ptratio: Pupil-teacher ratio by town.
+Black Proportion,b: 1000(Bk - 0.63)^2 where Bk is the proportion of Black residents by town.
+Lower Status Population,lstat: Percentage of lower status of the population.
+Median Home Value,medv: Median value of owner-occupied homes in $1000s (target variable).
