@@ -35,6 +35,42 @@ st.markdown("""
         }
     </style>
 """, unsafe_allow_html=True)
+# Load user credentials
+def load_users():
+    users_file = 'users.csv'
+    users_df = pd.read_csv(users_file)
+    return {row['username']: row['password'] for _, row in users_df.iterrows()}
+
+# Authentication function
+def authenticate(username, password, users):
+    return username in users and users[username] == password
+
+# Streamlit App Title
+st.image("image1.jpg")
+# st.title("Diabetes DataSet Analytics")
+
+# User Authentication
+users = load_users()
+st.sidebar.header("User Login")
+username = st.sidebar.text_input("Username")
+password = st.sidebar.text_input("Password", type="password")
+login_button = st.sidebar.button("Login")
+
+if "authenticated" not in st.session_state:
+    st.session_state.authenticated = False
+
+if login_button:
+    if authenticate(username, password, users):
+        st.sidebar.success("Login successful!")
+        st.session_state.authenticated = True
+    else:
+        st.sidebar.error("Invalid username or password. Please try again.")
+        st.session_state.authenticated = False
+
+if not st.session_state.authenticated:
+    st.stop()
+
+
 
 # Load the datasets
 data_dict_file = 'Boston-Housing-Dictionary.csv'
