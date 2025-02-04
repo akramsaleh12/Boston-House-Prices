@@ -46,7 +46,7 @@ def authenticate(username, password, users):
     return username in users and users[username] == password
 
 # Streamlit App Title
-st.image("image1.jpg")
+st.image("Image1.jpg")
 # st.title("Diabetes DataSet Analytics")
 
 # User Authentication
