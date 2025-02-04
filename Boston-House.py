@@ -47,7 +47,7 @@ def authenticate(username, password, users):
 
 # Streamlit App Title
 st.image("Image1.jpg")
-# st.title("Diabetes DataSet Analytics")
+st.title("Boston house prices DataSet Analytics")
 
 # User Authentication
 users = load_users()
@@ -79,8 +79,6 @@ data_file = 'Boston-Housing-Dataset.csv'
 data_dict = pd.read_csv(data_dict_file)
 data = pd.read_csv(data_file)
 
-# Streamlit App Title
-st.image("Image1.jpg")
 # st.title("Diabetes Dataset Descriptive Analytics")
 
 # Sidebar for navigation
